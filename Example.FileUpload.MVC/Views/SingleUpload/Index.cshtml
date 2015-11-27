@@ -1,0 +1,28 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>单文件上传Demo</title>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm("Upload", "SingleUpload", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            
+            <div>
+                <lable>请选择要上传文件：</lable>
+                <input type="file" name="file" />
+                <input type="submit" value="上传" />
+            </div>
+        }
+
+    </div>
+
+    <div>@TempData["UploadMsg"]</div>
+</body>
+</html>
