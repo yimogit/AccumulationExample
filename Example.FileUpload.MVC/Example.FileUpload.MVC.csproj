@@ -99,6 +99,7 @@
     <Content Include="packages.config" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\SingleUpload\Index.cshtml" />
+    <Content Include="Views\SingleUpload\Index2.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
